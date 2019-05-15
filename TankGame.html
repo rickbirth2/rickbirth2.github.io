@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Rick Taylors online portfolio</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="WebGL/TemplateData/style.css">
+		<script src="WebGL/TemplateData/UnityProgress.js"></script>  
+		<script src="WebGL/Build/UnityLoader.js"></script>
+		<script>
+		  var gameInstance = UnityLoader.instantiate("gameContainer", "WebGL/Build/WebGL.json", {onProgress: UnityProgress});
+		</script>
+	</head>
+	<body> 
+		<div class="header">
+			<h1>Tank Game</h1>
+		</div>
+		<div class="navigation-bar">
+			<div><a href="index.html">Home Page</a></div>
+			<div><a href="TowerDefenceGame.html">Tower Defence Game</a></div>
+			<div><a href="AboutMe.html">About Me</a></div>   
+		</div>
+		<div class="row">
+			<div class="left-side">
+				<img src="nature-image.jpg" alt="An example of my programming" width="333" height="620">
+			</div>
+			<div class="main">
+				<div class="webgl-content">
+					  <div id="gameContainer" style="width: 960px; height: 550px"></div>
+					  <div class="footer">
+						<div class="webgl-logo"></div>
+						<div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+						<div class="title">tanks</div>
+				  </div>
+				</div>
+			</div>
+			<div class="right-side">
+				<img src="nature-image.jpg" alt="An example of my programming" width="333" height="620">
+			</div>
+		</div>
+		<div class="footer">
+			<h3>Footer</h3>
+		</div>
+	</body>
+</html>
